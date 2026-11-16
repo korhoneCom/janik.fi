@@ -379,3 +379,20 @@ td.hinta { font-family: var(--font-head); font-weight: 600; color: #7FC4DC; whit
 .contact-form-simple .form-note { color: var(--muted); font-size: .88rem; margin: 0; }
 .contact-form-simple .form-note strong { color: var(--ink); font-family: ui-monospace, Menlo, Consolas, monospace; }
 .contact-form-simple .btn { margin-top: .25rem; }
+
+/* Yritystiedot yhteystiedoissa */
+.contact-meta {
+  display: flex; flex-wrap: wrap; gap: 1.25rem 2rem;
+  margin: 1.5rem 0 0; padding-top: 1.25rem;
+  border-top: 1px solid rgba(255,255,255,.14);
+}
+.contact-meta > div { min-width: 8rem; }
+.contact-meta dt {
+  font-family: var(--font-head); font-size: .72rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase; color: #9FB2BE;
+  margin-bottom: .2rem;
+}
+.contact-meta dd {
+  margin: 0; color: #fff; font-family: var(--font-head);
+  font-weight: 600; font-size: 1rem;
+}
