@@ -396,3 +396,29 @@ td.hinta { font-family: var(--font-head); font-weight: 600; color: #7FC4DC; whit
   margin: 0; color: #fff; font-family: var(--font-head);
   font-weight: 600; font-size: 1rem;
 }
+
+/* Referenssit */
+.ref-count { color: #9FB2BE; font-family: var(--font-body); font-size: .8em; font-weight: 500; }
+.ref-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.ref-card {
+  background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.13);
+  border-radius: var(--radius-lg); padding: 1.25rem 1.4rem;
+}
+.ref-card h4 { margin: 0 0 .4rem; color: #fff; font-size: 1.05rem; }
+.ref-card p { margin: 0 0 .8rem; font-size: .92rem; color: #B4BEC6; }
+.ref-link { color: #7FC4DC; font-weight: 600; text-decoration: none; font-size: .9rem; }
+.ref-link:hover { text-decoration: underline; }
+.ref-group { margin-top: 1.75rem; }
+.ref-group h4 { font-size: .95rem; margin: 0 0 .8rem; color: #E8ECEF; }
+.ref-grid-sm { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.ref-chip {
+  display: block; background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius-lg);
+  padding: .85rem 1rem; text-decoration: none; color: inherit;
+}
+.ref-chip:hover { border-color: #7FC4DC; background: rgba(255,255,255,.07); }
+.ref-title { display: block; color: #E8ECEF; font-size: .92rem; }
+.ref-domain { display: block; color: #7FC4DC; font-size: .8rem; margin-top: .2rem; }
+.ref-badges { display: block; color: #9FB2BE; font-size: .76rem; margin-top: .35rem; }
+@media (max-width: 980px) { .ref-grid-sm { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .ref-grid, .ref-grid-sm { grid-template-columns: 1fr; } }
